@@ -10,12 +10,12 @@ namespace ConsoleAdventure.Project.Models
     //NOTE Make yo rooms here...
     public void Setup()
     {
-      Room Room1 = new Room("Room1", "Room1 Desc");
-      Room Room2 = new Room("Room2", "Room2 Desc");
-      Room Room3 = new Room("Room3", "Room3 Desc");
-      Room Room4 = new Room("Room4", "Room4 Desc");
-      Room Room5 = new Room("Room5", "Room5 Desc");
-      Room Room6 = new Room("Room6", "You died");
+      Room Room1 = new Room("Room1", "You awake in an unknown dark room, time to escape.");
+      Room Room2 = new Room("Room2", "As you enter this room you see two exits. One to the north, and one to the south. Choose wisely");
+      Room Room3 = new Room("Room3", "As you enter this room you detect a faint smell of something cooking, you can either go check it out or return north to the previous room");
+      Room Room4 = new Room("Room4", "As you enter this room, there's a faint smell of something cooking, you can either go check it out or return south to the previous room");
+      Room Room5 = new Room("Room5", "The room was filled with freshly baked cookies. You win");
+      Room Room6 = new Room("Room6", "The room was on fire, you died");
 
 
 
