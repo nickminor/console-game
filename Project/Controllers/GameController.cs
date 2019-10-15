@@ -56,6 +56,9 @@ namespace ConsoleAdventure.Project.Controllers
         case "use":
           _gameService.UseItem(option);
           break;
+        case "inventory":
+          _gameService.Inventory();
+          break;
 
       }
     }

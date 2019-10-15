@@ -44,7 +44,7 @@ namespace ConsoleAdventure.Project
       //FIXME Iterate through the players inventory and add the item name to the messages
       _game.CurrentPlayer.Inventory.ForEach(item =>
       {
-        Messages.Add($"{item.Name}");
+        Messages.Add($"You've got a {item.Name}");
       });
     }
 
