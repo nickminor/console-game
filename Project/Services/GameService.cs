@@ -76,6 +76,7 @@ namespace ConsoleAdventure.Project
     ///<summary>When taking an item be sure the item is in the current room before adding it to the player inventory, Also don't forget to remove the item from the room it was picked up in</summary>
     public void TakeItem(string itemName)
     {
+      Messages.Clear();
       if (_game.CurrentRoom.Items.Count == 0)
       {
         Messages.Add("Nothing in here to take");
@@ -102,9 +103,11 @@ namespace ConsoleAdventure.Project
 
       if (room == "Room2")
       {
+        Messages.Clear();
         Messages.Add("it's unlocked!");
         _game.UnlockedRoom(_game.CurrentRoom, "north", "Room4");
         _game.UnlockedRoom(_game.CurrentRoom, "south", "Room3");
+
 
       }
       Messages.Add("");
