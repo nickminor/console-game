@@ -10,10 +10,10 @@ namespace ConsoleAdventure.Project.Models
 
     public string GetTemplate()
     {
-      string template = "Inventory: \n\n";
-      foreach (var inventory in Inventory)
+      string template = "Inventory-\n";
+      foreach (var i in Inventory)
       {
-        template += $"{inventory.Name}: {inventory.Description}";
+        template += $"{i.Name}: {i.Description} \n\n";
       }
       return template;
     }

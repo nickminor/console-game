@@ -26,7 +26,11 @@ namespace ConsoleAdventure.Project.Models
       string template = $"{Description}\n";
       foreach (var exit in Exits)
       {
-        template += $"\t doors:{exit.Key} \n";
+        template += $"\t Available Doors:{exit.Key} \n";
+      }
+      foreach (var item in Items)
+      {
+        template += $"On the ground you see a: {item.Name}";
       }
       return template;
     }
@@ -36,6 +40,7 @@ namespace ConsoleAdventure.Project.Models
       Name = name;
       Description = description;
       Exits = new Dictionary<string, IRoom>();
+      Items = new List<Item>();
     }
   }
 
